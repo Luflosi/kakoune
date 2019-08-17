@@ -139,12 +139,12 @@ struct MouseHandler
 
         case Key::Modifiers::MouseWheelDown:
             m_dragging = false;
-            scroll_window(context, 3);
+            scroll_window(context, 1);
             return true;
 
         case Key::Modifiers::MouseWheelUp:
             m_dragging = false;
-            scroll_window(context, -3);
+            scroll_window(context, -1);
             return true;
 
         default: return false;
